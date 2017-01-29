@@ -1,4 +1,8 @@
 <?php
+//echo '<pre>';
+//var_dump($_REQUEST['add']);
+//var_dump(json_decode($_REQUEST['add']));
+//exit;
 function show_like($text_array,$like) {
     $ids = "";
     foreach ($text_array as $text_line) {
@@ -16,7 +20,7 @@ function show_like($text_array,$like) {
     $ids = explode(',', rtrim($ids, ","));
     $result = "<table><tr>";
     foreach ($new_array as $key => $values) {
-        $result .= "<td>".$key."</td>";
+        $result .= "<th>".$key."</th>";
     }
     $result .= "</tr>";
     foreach($ids as $k => $v) {
@@ -29,6 +33,7 @@ function show_like($text_array,$like) {
     $result .= "</table>";
     return $result;
 }
+
 function show_count($text_array) {
     $count = 0;
     foreach ($text_array as $text_line) {
@@ -42,6 +47,7 @@ function show_count($text_array) {
     }
     return $count;
 }
+
 function show_table($text_array, $sort="") {
     foreach ($text_array as $text_line) {
         $array = explode('|', $text_line);
@@ -54,7 +60,7 @@ function show_table($text_array, $sort="") {
     if (!$sort) $sort = "flight";
     $result = "<table><tr>";
     foreach ($new_array as $key => $values) {
-         $result .= "<td>".$key."</td>";
+         $result .= "<th>".$key."</th>";
     }
     $result .= "</tr>";
     foreach($new_array[$sort] as $k => $v) {
@@ -68,6 +74,7 @@ function show_table($text_array, $sort="") {
     return $result;
     
 }
+
 if ( 0 != filesize( $_REQUEST['path'] ) ) {
     $fp = fopen($_REQUEST['path'],'r');
     if ($fp)

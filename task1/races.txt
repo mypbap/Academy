@@ -1,8 +1,8 @@
-flight|1|2|3|4|5|6|7|321|456
-company|AAAA|BBBB|CCCC|DDDD|EEEE|FFFF|GGGG|321|765
-fio|12|12|123|321|3332|dsad|dsd|321|6546
-city_start|weq|dsa|ewqw|eqw|ewqe|fdfs|fdsf|321|456
-city_finish|wqe|asd|Lviv|ffd|rewr|Lviv|gfh|Lviv|456
-price|70|20|50|40|30|60|10|321|456
-time|11:01|11:02|11:03|11:04|11:05|11:06|11:07|321|456
-marka|A1|B2|C3|D4|E5|F6|G7|3123|456
+flight|1|2|3|4|5|6|7|321|456|789
+company|AAAA|BBBB|CCCC|DDDD|EEEE|FFFF|GGGG|321|765|789
+fio|12|12|123|321|3332|dsad|dsd|321|6546|789
+city_start|weq|dsa|ewqw|eqw|ewqe|fdfs|fdsf|321|456|789
+city_finish|wqe|asd|Lviv|ffd|rewr|Lviv|gfh|Lviv|456|789
+price|70|20|50|40|30|60|10|321|456|789
+time|11:01|11:02|11:03|11:04|11:05|11:06|11:07|321|456|789
+marka|A1|B2|C3|D4|E5|F6|G7|3123|456|789
